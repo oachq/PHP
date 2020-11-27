@@ -1,4 +1,4 @@
-.body {
+body {
     background-color: aqua;
 }
 
@@ -8,4 +8,5 @@
 
 .btn {
     color: red;
+    background-color: salmon;
 }
