@@ -26,13 +26,11 @@ $var1 = 8; //number
 $var2 = "8";//string
 $var3 = "texlave"; //string
 
-
-if($var1===$var2){
+if ($var1===$var2){
     echo "son iguales";
 }else {
     echo "no son iguales";
 }
-
     ?>
 </body>
 </html>
