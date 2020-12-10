@@ -41,7 +41,7 @@ Operadores matematicos ||
 
     <?php
     // mandamos llamar el archivo calculadora.php para utilizar la logica del mimso
-    // el obejtivo del video es incrementar o drecementar un numero. 
+    // el obejtivo del video es incrementar o drecementar un numero.
         include ('calculadora.php');
 
 
