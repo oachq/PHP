@@ -38,6 +38,18 @@
                 global $num2;
                 echo"el resultado es: ". ($num1%$num2);
             }
+            if (!strcmp("incrementador",$calculo)){
+                global $num1;
+                //global $num2;
+                $num1++;
+                echo"el resultado es: ". ($num1);
+            }
+            if (!strcmp("decrementador",$calculo)){
+                global $num1;
+                //global $num2;
+                $num1--;
+                echo"el resultado es: ". ($num1);
+            }
         }
 
         ?>
