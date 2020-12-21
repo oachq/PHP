@@ -8,42 +8,27 @@
 </head>
 <body>
     <h1>
-        Funciones 2, parametros por valor y por referencia.
+        Funciones por paramatro o por referencia. 
     </h1>
+    <h3>
+        Video 21. 
+    </h3>
 
-    <h2>
-        video 21.
-    </h2>
+    <?php
+    // funciones por parametros o por referencia. 
+    // definicion..  (parametros con el mismo nombre de variable) cuando una funcion es por parametro se toma el valor del parametro para la funcion a usar, una ves usado ese parametro 
+    // vuelve a su valor ortiginal. 
 
-    <?php 
-    // funciones de paso de parametro por valor:
-    // sintaxis. 
-        /* function ejemplo ($param){  //funcion dodne solo se pasa un valor.
-            $param++
-        }
-       
-    function ejemplo ($param){
-        $param++;
-        return $param;
-    }
-    echo ejemplo(5);
- */
-
-    // funciones de paso de parametro por referencia:
-    // sintaxis. 
-    /* function ejemplo (&$param){  //se le agrega el & en el param y es una funcion dodne solo se pasa un referencia que hace que se me modifique por el valor nuevo de la variable.
-        $param++
-    }
-    */
-    function ejemplo (&$param){
-        $param++;
-        return $param; //param aqui vale 6 
-    }
-    $param=5; //param aqui vale 5 
-    echo ejemplo($param) . "<br>"; //param aqui vale 6
-
-    echo $param; //param aqui vale 6
-
+    // definicion.. (parametros con el mismo nombre de variable) cuando una funcion es por referencia "&" se toma el valor del parametro para la funcion a usar, una ves usado ese parametro
+    // se modifica el nuevo valor que tomo ese parametro, es decir se modifica globalmente el valor. 
+     function incrementa (&$valor){
+         $valor++;
+         return $valor;
+     }
+//------------------------- 
+     $numero=5;
+     echo incrementa ($numero) . "<br>";
+     echo $numero;
 
     ?>
 </body>
