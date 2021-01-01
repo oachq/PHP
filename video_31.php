@@ -18,6 +18,8 @@
 
     //$datos= "alan";
 
+    //$datos["pais"]="Mexico"; // con esto agrgamos un nuevo campo al array datos
+    
    /* if (is_array($datos)){ //funcion is array te dice si la data que tomaste es un array o no. 
         echo "esto es un array";
     }else{
