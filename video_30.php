@@ -9,7 +9,7 @@
 <body>
 
     <h1> ARRAYS </h1>
-    <h2> video 30 </h2>
+    <h2> video 30  </h2>
 
 <?php
   /* Forma uno de como crear un array en php  
