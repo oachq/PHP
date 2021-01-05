@@ -27,8 +27,12 @@
 
 
    // echo $alimentos["frutas"]["otros"]; metodo para ingresar a un elemento del array bidimensional
+   echo "-----------------FUNCION PREDEFINIDA DE PHP-----------------";
+   echo "<br>";
+   echo var_dump($alimentos);
    
-   
+   echo "<br>";
+   echo "<br>";
    // funcion creada con logia de uno mismo para recorrrer el array 
    echo "-----------------FUNCION CON LOGICA PRIMITIVA-----------------";
    echo "<br>";
@@ -41,12 +45,8 @@
         echo "<br>";
     }
 
-    echo "<br>";
-    echo "<br>";
 
-    echo "-----------------FUNCION PREDEFINIDA DE PHP-----------------";
-    echo "<br>";
-    echo var_dump($alimentos);
+
     ?>
 </body>
 </html>
