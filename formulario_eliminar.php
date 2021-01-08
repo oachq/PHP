@@ -16,6 +16,7 @@
 <h2>
     video 43.
 </h2>
+<div class="container m-5">
     <form name="form1" method="get", action="video_44.php">
   <div class="mb-3">
     <label for="seccion" class="form-label">Seccion</label>
