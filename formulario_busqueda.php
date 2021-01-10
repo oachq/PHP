@@ -20,7 +20,7 @@
         video 40-41.
     </h2>
 
-    <form action="video_40.php" method="get">
+    <form action="video_53.php" method="get">
         <label for="buscar">
             <input type="text" name="buscar">
         </label>
