@@ -9,16 +9,16 @@
 <body>
     
     <h1>
-        PDO consultas preparadas. 
+        PDO consultas preparadas y marcadores en consultas preparadas . 
     </h1>
 
     <h2>
-        video 52.
+        video 53-54.
     </h2>
 
 
     <?php
-    $busqueda= $_GET["buscar"];
+    $busqueda= $_GET["buscar"]; 
 
     try{
         $base= new PDO ('mysql:host=localhost; dbname:prueba', 'root','');
@@ -28,9 +28,9 @@
         
         $base->exec("SET CHARACTER SET utf8");
 
-        $sql="SELECT * FROM ARTÍCULOS WHERE NOMBRE_ARTICULO=$busqueda";
+        $sql="SELECT * FROM ARTÍCULOS WHERE NOMBRE_ARTICULO= :n_art";
         $resultado=$base->prepare($sql);
-        $resultado=execute(array("NOMBRE_ARTICULO"=>$busqueda));
+        $resultado=execute(array(":n_art"=>$busqueda));
         /*while($registro=$resultado->fetch(PDO::FETCH_ARRAY)){
             echo "Seccion" . $registro[0] . "Nombre articulo: " . $registro[1] . "Fecha: " . $registro[2] . "Pais de origen: " . $registro[3] . "Precio: " . $registro[3] . "<br>";
         }
