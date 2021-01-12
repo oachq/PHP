@@ -30,18 +30,12 @@
 
         $sql="SELECT * FROM ARTÍCULOS WHERE NOMBRE_ARTICULO= :n_art";
         $resultado=$base->prepare($sql);
-        $resultado=execute(array(":n_art"=>$busqueda));
+        $resultado::execute(array(":n_art"=>$busqueda));
+
         /*while($registro=$resultado->fetch(PDO::FETCH_ARRAY)){
             echo "Seccion" . $registro[0] . "Nombre articulo: " . $registro[1] . "Fecha: " . $registro[2] . "Pais de origen: " . $registro[3] . "Precio: " . $registro[3] . "<br>";
-        }
+        }*/
         
-     /*   <div>
-    <form action="video_53.php" method="get">
-        <label for="buscar"> Buscar </label>
-        <input type="text" name="buscar">
-        <input type="submit" name="enviando" value="Rajale!">
-    </form>
-</div>*/
         
         while($registro=$resultado->fetchAll(PDO::FETCH_ASSOC)){
             echo "Seccion" . $registro['SECCION'] . "Nombre articulo: " . $registro['NOMBRE_ARTICULO'] . "Fecha: " . $registro['FECHA'] . "Pais de origen: " . $registro['PAIS_DE_ORIGEN'] . "Precio: " . $registro['PRECIO'] . "<br>";
