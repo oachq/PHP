@@ -1,5 +1,5 @@
 <?php
-
+// video 57  
 // archivo para tomar la data de la base de datos en este caso la tabla ARTICULOS con sql.
 require "video_57.php";
 

@@ -1,10 +1,11 @@
 <?php
-// video 57  
+// video 58  
 // imprimimos la tabla ARTICULOS.
-    require "devuelve_articulo.php";
+    require "video_58.php";
+    $pais=$_GET["buscar"];
     $productos = new DevuelveProductos();
 
-    $array_productos=$productos->get_productos();
+    $array_productos=$productos->get_productos($pais);
 ?>
 
 <!DOCTYPE html>
@@ -17,10 +18,10 @@
 </head>
 <body>
     <h1>
-        Conexion a base de datos con POO 
+        Conexion a base de datos con POO y PDO
     </h1>
     <h2>
-        video 57.
+        video 58.
     </h2>
     <?php
         foreach($array_productos as $elemento){
